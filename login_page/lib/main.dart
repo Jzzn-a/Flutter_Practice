@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(32.0),
+                    padding: EdgeInsets.all(32.0),
                     child: Image.network(
                       "https://i.ibb.co/nngK6j3/startup.png",
                       width: 80,
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
                         contentPadding: EdgeInsets.all(10.0)),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 20),
+                    padding: EdgeInsets.only(top: 20),
                     child: TextField(
                       obscureText: true,
                       decoration: InputDecoration(
@@ -80,5 +80,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-//commit용
