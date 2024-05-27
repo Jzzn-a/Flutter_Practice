@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,6 +29,20 @@ class MyApp extends StatelessWidget {
               onPressed: () {},
             )
           ],
+        ),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              TextField(
+                decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.black, width: 1.0)),
+                  hintText: '영화 제목을 검색해주세요.',
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
